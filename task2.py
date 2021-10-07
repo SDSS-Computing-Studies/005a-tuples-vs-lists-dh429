@@ -25,15 +25,15 @@ Enter a word: virus
 """
 mylist = []
 
-word1 = input("Enter a word:")
+word1 = input("Enter a word:").strip
 mylist.append(word1)
-word2 = input("Enter a word:")
+word2 = input("Enter a word:").strip
 mylist.append(word2)
-word3 = input("Enter a word:")
+word3 = input("Enter a word:").strip
 mylist.append(word3)
-word4 = input("Enter a word:")
+word4 = input("Enter a word:").strip
 mylist.append(word4)
-word5 = input("Enter a word:")
+word5 = input("Enter a word:").strip
 mylist.append(word5)
 
 
