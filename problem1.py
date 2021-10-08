@@ -26,13 +26,14 @@ print(namelist)
 
 remove = input("Choose a person from the list to replace:").strip()
 
+replace = input("Enter the replacement:").strip()
+
 for i in namelist:
     if i == remove:
+        index = namelist.index(remove)
+        namelist.insert(index, replace)
         namelist.remove(remove)
         break
 
-replace = input("Enter the replacement:").strip()
-
-namelist.append(replace)
 
 print(namelist)
