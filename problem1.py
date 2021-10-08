@@ -19,3 +19,20 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+
+namelist = ["Alain", "Brian", "Chris", "Justin", "Angela", "Rick"]
+
+print(namelist)
+
+remove = input("Choose a person from the list to replace:").strip()
+
+for i in namelist:
+    if i == remove:
+        namelist.remove(remove)
+        break
+
+replace = input("Enter the replacement:").strip()
+
+namelist.append(replace)
+
+print(namelist)
